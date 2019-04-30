@@ -1,8 +1,6 @@
 // script.js
 
 function nomeatballs() {
-    // grab all elements that have class of meatballs
-    // remove identified elements
     let meatballs = document.getElementsByClassName('meatball');
 
     while (meatballs[0]) {
@@ -10,13 +8,15 @@ function nomeatballs() {
     }
 }
 
-let section1 = document.getElementById('sec1');
+window.onload = function(){
+    let section1 = document.getElementById('sec1');
 
-for (let i = 0; i < 10; i++) {
-    let newPara = document.createElement('p');
-    newPara.innerText = "I like pizza";
-    newPara.className = 'meatball';
-    section1.appendChild(newPara);    
+    for (let i = 0; i < 10; i++) {
+        let newPara = document.createElement('p');
+        newPara.innerText = "I like pizza";
+        newPara.className = 'meatball';
+        section1.appendChild(newPara);    
+    }
 }
 
 
