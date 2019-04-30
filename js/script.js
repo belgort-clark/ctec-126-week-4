@@ -4,11 +4,10 @@ function nomeatballs() {
     // grab all elements that have class of meatballs
     // remove identified elements
     let meatballs = document.getElementsByClassName('meatball');
-    let parent = document.getElementById('sec1');
 
-    // for (let ball = 0; ball < 10; ball++) {
-        parent.removeChild(meatballs);
-    // }
+    while (meatballs[0]) {
+        meatballs[0].parentNode.removeChild(meatballs[0]);
+    }
 }
 
 let section1 = document.getElementById('sec1');
